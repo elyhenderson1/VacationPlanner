@@ -1,13 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacation Planner App</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background: linear-gradient(to bottom right, #6FB1FC, #FFDEE9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #fdfdfd;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1.5em;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            background: #ff5722;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .wave {
+            position: absolute;
+            width: 100%;
+            height: 150px;
+            background: url('https://www.svgrepo.com/show/30922/wave.svg') repeat-x;
+            bottom: 0;
+            animation: wave 4s infinite linear;
+        }
+
+        @keyframes wave {
+            0% { background-position: 0 0; }
+            100% { background-position: 1440px 0; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Download Vacation Planner App</h1>
-    <p>Click the button below to download the APK file:</p>
+    <h1>Vacation Planner App</h1>
+    <p>Your adventure starts here! Plan your perfect getaway in just a few taps. 🌴✈️</p>
     <a href="app-release.apk" download>
         <button>Download APK</button>
     </a>
+    <div class="wave"></div>
 </body>
 </html>
